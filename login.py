@@ -157,7 +157,6 @@ def search_book_with_category():
     book_data = list(db.book.find({'category': category}, {'_id': False}))
     print(book_data)
 
-
     return jsonify({'msg': ' 저장 ','book_data':book_data,'searchValue_receive':searchValue_receive})
 
 
